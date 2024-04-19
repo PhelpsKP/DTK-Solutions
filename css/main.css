@@ -6,29 +6,17 @@
     position: relative;
 }
 
-/* Header */
-header {
-    color: white;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
 .container {
     padding: 20px;
 }
 
 .elements {
     z-index: 2;
-    padding-left: 19em;
+    padding-left: 40vw;
     position: absolute
 }
 
 .btn {
-    position: absolute;
     z-index: 3;
 }
 
@@ -44,31 +32,47 @@ header {
 header {
     color: white;
     background: url(images/logo.jpg);
+    background-position: center top -2em;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr 3;
+    display: flex;
+    justify-content: space-between;
     text-align: right;
+    padding-left: 4em;
+    padding-top: 3em;
+}
+
+button {
+    background: linear-gradient(45deg, #096093 2em, navy);
+    color: white;
+    padding: 300px 200px;
 }
 
 header h1 {
     color: rgb(59, 47, 219);
+    font-family: roboto;
+    font-weight: 800;
     text-transform: uppercase;
     margin-top: -.8em;
-    font-size: 4vw;
+    font-size: 5vw;
     text-shadow: 2px 2px 8px rgb(255, 255, 255);
 
 }
 
 header h2 {
-    font-size: 2vw;
+    font-size: 1.7vw;
     color: rgb(255, 208, 142);
     text-shadow: 2px 2px 8px black;
+    font-family: roboto;
+    font-weight: 400;
 }
 
+header, h1 header h2 {
+    text-align: center;
+}
 /* Main */
 main {
     font-family: 'Stint Ultra Expanded', Georgia, serif;
@@ -82,7 +86,7 @@ main {
     margin: 1em 1em 1em 1em;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 2rem;
 }
 
@@ -95,7 +99,7 @@ img {
 aside.testimonials {
     padding: 1em;
     font-size: 120%;
-    border: navy 10px solid;
+    border: navy 3px solid;
     background: linear-gradient(45deg, #096093 20em, navy);
     border-radius: 25px;
 }
@@ -127,30 +131,32 @@ a:active {
     transition: all .5s ease;
 }
 
-a[href$=".pdf"]::before {
-    content: url('/images/icon_pdf.gif');
-}
-
-a[href^="http"]::after{
-    content: url('/images/icon_external.png');
-}
-
 /* Footer */
 footer {
     color: #EADDC4;
     text-align: center;
     font-size: .8em;
-    padding: 1em;
-    font-family: verdana, sans-serif;
+    padding: 2em;
+    font-family: roboto;
     background-color: navy;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-icons {
+.icons {
+    grid-gap: 1em;
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 150%;
 }
+
+.info {
+    font-size: 150%;
+    display: grid;
+    grid-template-rows: 2.5fr 1fr;
+}
+
 
 .fa {
     padding: 1em;
@@ -163,11 +169,15 @@ icons {
 }
 
 .address {
-    padding: 1em 0 0 0;
+    align-items: center;
+    padding: 2em 2em;
     margin-left: 1em;
     color: rgb(255, 208, 142);
     background: linear-gradient(45deg, #096093 2em, rgb(48, 48, 130));
+    border-radius: 15px;
     font-size: 1.5em;
+    font-family: roboto;
+    font-weight: 800;
 }
 
 img.shannon {
@@ -204,10 +214,9 @@ img.shane {
     background-color: black;
 }
 
-/* Adjustments for smaller screens */
 @media (max-width: 768px) {
     main {
-        grid-template-columns: 1fr; /* Single column layout on smaller screens */
-        margin: 1rem 1rem 0 1rem; /* Adjusted margin for smaller screens */
+        grid-template-columns: 1fr;
+        margin: 1rem 1rem 0 1rem;
     }
 }
