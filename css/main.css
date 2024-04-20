@@ -1,6 +1,7 @@
 .interior-bg {
     background-image: url('/images/logo.jpg');
     background-size: cover;
+    background-position: center top -2em;
     height: 14.5em;
     width: 100%;
     position: relative;
@@ -31,16 +32,11 @@
 
 header {
     color: white;
-    background: url(images/logo.jpg);
-    background-position: center top -2em;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
-    text-align: right;
     padding-left: 4em;
     padding-top: 3em;
 }
@@ -58,8 +54,6 @@ header h1 {
     text-transform: uppercase;
     margin-top: -.8em;
     font-size: 5vw;
-    text-shadow: 2px 2px 8px rgb(255, 255, 255);
-
 }
 
 header h2 {
@@ -131,53 +125,95 @@ a:active {
     transition: all .5s ease;
 }
 
+
 /* Footer */
 footer {
-    color: #EADDC4;
-    text-align: center;
+    background-color: navy;
+    color: #fff;
     font-size: .8em;
     padding: 2em;
     font-family: roboto;
-    background-color: navy;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
 }
-
-.icons {
-    grid-gap: 1em;
-    display: flex;
-    align-items: flex-start;
-    font-size: 150%;
-}
-
-.info {
-    font-size: 150%;
-    display: grid;
-    grid-template-rows: 2.5fr 1fr;
-}
-
 
 .fa {
-    padding: 1em;
+    padding: .5em;
     font-size: 15em;
-    width: 3 em;
+    width: 2em;
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
     background-color: white;
 }
 
+/* Icons */
+.icons {
+    margin: 2.2em;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icons a {
+    font-size: 40px;
+    margin-right: 1em;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    left: 20px
+}
+
+.icons p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+p.email {
+    margin-top: 2.5em;
+    font-size: 16px;
+}
+
+/* Info */
+
+.info {
+    font-size: 150%;
+    display: grid;
+    grid-template-rows: 2.5fr 1fr;
+    position: absolute;
+    bottom: 1em;
+    left: 3em;
+}
+
+.info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* Map */
+iframe {
+    width: 50%;
+    height: 250px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 50em;
+}
+
+/* Address */
 .address {
     align-items: center;
     padding: 2em 2em;
     margin-left: 1em;
-    color: rgb(255, 208, 142);
-    background: linear-gradient(45deg, #096093 2em, rgb(48, 48, 130));
+    color: navy;
+    background: linear-gradient(45deg, rgb(255, 208, 142) 2em, rgb(194, 149, 86));
     border-radius: 15px;
     font-size: 1.5em;
     font-family: roboto;
     font-weight: 800;
+    font-style: italic;
+    border: solid .3em rgb(194, 149, 86);
 }
 
 img.shannon {
