@@ -6,11 +6,8 @@ h1 {
     text-decoration: none;
 }
   
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #333
-}
+
+/* Header */
 
 .interior-bg {
     background-image: url('/images/logo.jpg');
@@ -96,6 +93,12 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333
 }
 
 article h1 {
@@ -384,4 +387,4 @@ iframe {
     footer {
       margin-top: 1em;
     }
-  }
+    }
