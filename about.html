@@ -3,107 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us | DTK Solutions</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/back.css">
-    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.js" defer></script>
 </head>
 <body class="sidebar">
 
 <div class="wrapper">
-    <header class="interior-bg">
-        <div class="container d-flex justify-content-between align-items-center">
-            <!-- Menu Button -->
-            <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWindow">
-                &#9776; Menu
-            </button>
-    
-            <!-- Title and Subtitle -->
-            <div class="elements">
-                <a href="index.html"><h1>DTK Solutions</h1></a>
-                <h2>"Quality isn't everything. It's the only thing."</h2>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-brand">
+                <a href="index.html">
+                    <p class="brand-name">DTK Solutions</p>
+                    <span class="brand-tagline">"Quality isn't everything. It's the only thing."</span>
+                </a>
+            </div>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plumbing.html">Plumbing</a></li>
+                    <li><a href="hvac.html">Heating &amp; Air</a></li>
+                    <li><a href="turns.html">Apartment Turns</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:5136920112" class="header-cta">Call (513) 692-0112</a>
+                <button class="btn-mobile-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWindow" aria-label="Open navigation menu">
+                    &#9776;
+                </button>
             </div>
         </div>
-        <div class="overlay"></div>
     </header>
-    <main class="homepage">
+    <main class="about-page">
 
-        <article class="blog">
-            <img src="images/van.jpg" alt="Hello Professor Anderson, this is a terrible, awful picture of his van but it's the one he gave me. I promise there will be a better picture of the van when the final project is turned in.">
-            <p>Welcome to DTK Solutions, where quality service and customer 
-                satisfaction are our top priorities. With over two decades 
-                of experience serving the Greater Cincinnati and Northern 
-                Kentucky area, we have established ourselves as the premier 
-                choice for plumbing solutions.
+        <!-- About Hero -->
+        <section class="about-hero">
+            <div class="about-hero-inner">
+                <h1>About DTK Solutions</h1>
+                <p class="about-hero-sub">Quality service and customer satisfaction &ndash; serving Greater Cincinnati and Northern Kentucky.</p>
+            </div>
+        </section>
 
-                <h1>Our Story:</h1>
-                
-                <p>DTK Solutions was founded with a simple yet powerful vision: 
-                to provide reliable, high-quality plumbing services to our 
-                local community. Since our inception, we have remained 
-                committed to this mission, earning the trust and loyalty of 
-                countless homeowners and businesses.</p>
-                
-                <h1>Our Team:</h1>
-                
-                <p>At DTK Solutions, our team is the heart and soul of our 
-                business. Each member of our team is a skilled professional 
-                with years of experience in the plumbing industry. From our 
-                certified technicians to our friendly customer service 
-                representatives, every member of our team is dedicated to 
-                delivering exceptional service with a personal touch.</p>
-                
-                <h1>Our Services:</h1>
-                
-                <p>We offer a comprehensive range of plumbing services to meet 
-                your needs, including:</p>
-                
-                <ul><li><h3>Repairs:</h3> From leaky faucets to burst pipes, we handle all 
-                types of plumbing repairs with precision and expertise.</li>
-                
-                <li><h3>Installations:</h3> Whether you need a new water heater installed 
-                or a plumbing fixture replaced, we have you covered.</li>
-                
-                <li><h3>Maintenance:</h3> Regular maintenance is essential to keep your 
-                plumbing system running smoothly. Our maintenance services 
-                help prevent costly repairs down the line.</li>
-                
-                <li><h3>Emergency Services:</h3> Plumbing emergencies can strike at any 
-                time. That's why we offer 24/7 emergency services to address 
-                urgent plumbing issues promptly.</li></ul>
-                
-                <h1>Our Commitment:</h1>
-                
-                <p>At DTK Solutions, we are committed to providing the highest 
-                level of service to our customers. We understand that plumbing 
-                problems can be stressful, which is why we go above and beyond 
-                to make the repair process as smooth and hassle-free as 
-                possible. When you choose DTK Solutions, you can trust that 
-                your plumbing needs are in good hands.</p>
-        </article>
-        <a href="tel:513-692-0112" class="btn-call-now">Call Now!</a>
+        <!-- About Intro: image + story -->
+        <section class="about-intro">
+            <div class="about-intro-inner">
+                <div class="about-image">
+                    <img src="images/van.jpg" alt="DTK Solutions service van">
+                </div>
+                <div class="about-text">
+                    <p>Welcome to DTK Solutions, where quality service and customer
+                        satisfaction are our top priorities. With over two decades
+                        of experience serving the Greater Cincinnati and Northern
+                        Kentucky area, we have established ourselves as the premier
+                        choice for plumbing solutions.</p>
+                    <h2>Our Story</h2>
+                    <p>DTK Solutions was founded with a simple yet powerful vision:
+                        to provide reliable, high-quality plumbing services to our
+                        local community. Since our inception, we have remained
+                        committed to this mission, earning the trust and loyalty of
+                        countless homeowners and businesses.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- About Details: Team, Services, Commitment -->
+        <section class="about-details">
+            <div class="about-details-inner">
+                <div class="about-card">
+                    <h2>Our Team</h2>
+                    <p>At DTK Solutions, our team is the heart and soul of our
+                        business. Each member of our team is a skilled professional
+                        with years of experience in the plumbing industry. From our
+                        certified technicians to our friendly customer service
+                        representatives, every member of our team is dedicated to
+                        delivering exceptional service with a personal touch.</p>
+                </div>
+                <div class="about-card">
+                    <h2>Our Services</h2>
+                    <p>We offer a comprehensive range of plumbing services to meet your needs, including:</p>
+                    <ul class="about-services-list">
+                        <li><strong>Repairs:</strong> From leaky faucets to burst pipes, we handle all
+                            types of plumbing repairs with precision and expertise.</li>
+                        <li><strong>Installations:</strong> Whether you need a new water heater installed
+                            or a plumbing fixture replaced, we have you covered.</li>
+                        <li><strong>Maintenance:</strong> Regular maintenance is essential to keep your
+                            plumbing system running smoothly. Our maintenance services
+                            help prevent costly repairs down the line.</li>
+                        <li><strong>Emergency Services:</strong> Plumbing emergencies can strike at any
+                            time. That's why we offer 24/7 emergency services to address
+                            urgent plumbing issues promptly.</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h2>Our Commitment</h2>
+                    <p>At DTK Solutions, we are committed to providing the highest
+                        level of service to our customers. We understand that plumbing
+                        problems can be stressful, which is why we go above and beyond
+                        to make the repair process as smooth and hassle-free as
+                        possible. When you choose DTK Solutions, you can trust that
+                        your plumbing needs are in good hands.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About CTA -->
+        <section class="about-cta">
+            <div class="about-cta-inner">
+                <h2>Ready to Get Started?</h2>
+                <div class="about-cta-actions">
+                    <a href="tel:5136920112" class="svc-btn-primary">Call (513) 692-0112</a>
+                    <a href="mailto:rooterking40@gmail.com" class="svc-btn-secondary">Book an Appointment</a>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
-        <div class="icons">
-            <p><a href="#" class="fa fa-facebook"></a></p>
-            <p><a href="#" class="fa fa-linkedin"></a></p>
-            <p><a href="mailto:youremail@example.com" class="fa fa-envelope"></a></p>
-            <p class="email">rooterking40@gmail.com</p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col footer-contact">
+                <p class="footer-col-heading">Contact Us</p>
+                <p class="footer-brand">DTK Solutions 1, LLC</p>
+                <p><a href="tel:5136920112">(513) 692-0112</a></p>
+                <p><a href="mailto:rooterking40@gmail.com">rooterking40@gmail.com</a></p>
+                <p>260 Northland Blvd<br>Cincinnati, OH 45246</p>
+            </div>
+            <div class="footer-col footer-links">
+                <p class="footer-col-heading">Quick Links</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plumbing.html">Plumbing</a></li>
+                    <li><a href="hvac.html">Heating &amp; Air</a></li>
+                    <li><a href="turns.html">Apartment Turns</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-map">
+                <p class="footer-col-heading">Our Location</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.2194748194847!2d-84.48254218818542!3d39.28327292372523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88404e7d548508f1%3A0x44d0b4330a9b6056!2s260%20Northland%20Blvd%2C%20Springdale%2C%20OH%2045246!5e0!3m2!1sen!2sus!4v1712592071431!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="info">
-            &copy; copyright 2024 DTK Solutions 1, LLC</p>
-            (513) 692-0112</p>
-            <p>260 Northland Blvd Cincinnati, OH 45246</p>
+        <div class="footer-bottom">
+            <p>&copy; copyright 2024 DTK Solutions 1, LLC</p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.2194748194847!2d-84.48254218818542!3d39.28327292372523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88404e7d548508f1%3A0x44d0b4330a9b6056!2s260%20Northland%20Blvd%2C%20Springdale%2C%20OH%2045246!5e0!3m2!1sen!2sus!4v1712592071431!5m2!1sen!2sus" width="250" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
 </div>
@@ -118,9 +168,10 @@
         <div>
             <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="plumbing.html">Plumbing</a></li>
-                <li><a href="hvac.html">Heating and Air Conditioning</a></li>
-                <li><a href="turns.html">Apartment turns</a></li>
+                <li><a href="hvac.html">Heating &amp; Air</a></li>
+                <li><a href="turns.html">Apartment Turns</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>

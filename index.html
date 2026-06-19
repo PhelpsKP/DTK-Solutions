@@ -1,87 +1,177 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DTK Solutions</title>
+    <title>DTK Solutions | Plumbing, HVAC &amp; Apartment Turns</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.js" defer></script>
 </head>
 <body class="sidebar">
 
 <div class="wrapper">
-    <header class="interior-bg">
-        <div class="container d-flex justify-content-between align-items-center">
-            <!-- Menu Button -->
-            <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWindow">
-                &#9776; Menu
-            </button>
-    
-            <!-- Title and Subtitle -->
-            <div class="elements">
-                <a href="index.html"><h1>DTK Solutions</h1></a>
-                <h2>"Quality isn't everything. It's the only thing."</h2>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-brand">
+                <a href="index.html">
+                    <p class="brand-name">DTK Solutions</p>
+                    <span class="brand-tagline">"Quality isn't everything. It's the only thing."</span>
+                </a>
+            </div>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plumbing.html">Plumbing</a></li>
+                    <li><a href="hvac.html">Heating &amp; Air</a></li>
+                    <li><a href="turns.html">Apartment Turns</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:5136920112" class="header-cta">Call (513) 692-0112</a>
+                <button class="btn-mobile-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWindow" aria-label="Open navigation menu">
+                    &#9776;
+                </button>
             </div>
         </div>
-        <div class="overlay"></div>
     </header>
-    <main class="homepage">
+    <main>
 
-        <article class="blog">
-            <img src="images/work.jpg" alt="Service Specialists">
-            <p>At DTK Solutions, quality isn't just a buzzword – it's our guiding principle. 
-                Our team of skilled professionals specializes in a wide range of services 
-                to meet all your needs. From plumbing repairs and installations to HVAC 
-                maintenance and repairs, we have the knowledge and expertise to handle any 
-                project with ease. Whether you're dealing with a clogged drain, a 
-                malfunctioning air conditioner, or the need for quick and efficient 
-                apartment turns, we've got you covered.</p>
-                <p>When it comes to your home or business, don't settle for anything less 
-                    than the best. Choose DTK Solutions for all your service needs and 
-                    experience the difference firsthand. Get in touch with us today to 
-                    learn more about our comprehensive range of services and how we can 
-                    help you achieve your goals!</p>
-        </article>
+        <!-- Hero -->
+        <section class="hp-hero">
+            <div class="hp-hero-inner">
+                <div class="hp-hero-text">
+                    <h1>Your Local Plumbing, HVAC &amp; Apartment Turn Specialists</h1>
+                    <p>At DTK Solutions, quality isn't just a buzzword – it's our guiding principle. Our team of skilled professionals is ready to help with plumbing repairs and installations, HVAC maintenance and repairs, and efficient apartment turns across the Greater Cincinnati and Northern Kentucky area.</p>
+                    <div class="hp-hero-ctas">
+                        <a href="tel:5136920112" class="hp-btn-primary">Call (513) 692-0112</a>
+                        <a href="mailto:rooterking40@gmail.com" class="hp-btn-secondary">Book an Appointment</a>
+                    </div>
+                </div>
+                <div class="hp-hero-image">
+                    <img src="images/work.jpg" alt="DTK Solutions service team at work">
+                </div>
+            </div>
+        </section>
 
-        <aside class="testimonials">
-            <h3>Testimonials</h3>
-            <ul>
-                <li>Shannon Doherty - Sharonville, OH</li>
-                <blockquote>"When you are in need of a heating and cooling company, DTK Solutions is the area's best
-                    locally-owned and operated HVAC company that provides quality HVAC services to fit your needs."</blockquote>
+        <!-- Services -->
+        <section class="hp-services">
+            <div class="hp-services-inner">
+                <h2 class="hp-section-heading">Our Services</h2>
+                <div class="hp-service-cards">
+                    <div class="hp-service-card">
+                        <h3>Plumbing</h3>
+                        <p>From burst pipes and clogged drains to repairs and installations, our expert team handles any plumbing issue swiftly and effectively. Scheduling your appointment is just a phone call away.</p>
+                        <a href="plumbing.html" class="btn-card-link">Learn More</a>
+                    </div>
+                    <div class="hp-service-card">
+                        <h3>Heating &amp; Air Conditioning</h3>
+                        <p>Whether it's a malfunctioning furnace or a faulty air conditioner, we specialize in transforming HVAC problems into manageable situations with swift response and meticulous workmanship.</p>
+                        <a href="hvac.html" class="btn-card-link">Learn More</a>
+                    </div>
+                    <div class="hp-service-card">
+                        <h3>Apartment Turns</h3>
+                        <p>From tight turnarounds to unexpected repairs, our team addresses apartment turnover needs promptly and efficiently so your properties are ready when you need them.</p>
+                        <a href="turns.html" class="btn-card-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <li>Matthew Larson - Batavia, OH</li>
-                <blockquote>"“Kudos, to our plumber, Stewart, who backed up his words with amazing service.”"</blockquote>
+        <!-- Why Choose -->
+        <section class="hp-why">
+            <div class="hp-why-inner">
+                <h2 class="hp-section-heading">Why Choose DTK Solutions?</h2>
+                <div class="hp-why-grid">
+                    <div class="hp-why-card">
+                        <h3>Skilled Professionals</h3>
+                        <p>Our certified technicians and customer service representatives are dedicated to delivering exceptional service with a personal touch on every job.</p>
+                    </div>
+                    <div class="hp-why-card">
+                        <h3>Serving Greater Cincinnati &amp; Northern Kentucky</h3>
+                        <p>With over two decades of experience, we've established ourselves as the premier choice for plumbing, HVAC, and property services across the region.</p>
+                    </div>
+                    <div class="hp-why-card">
+                        <h3>Quality You Can Count On</h3>
+                        <p>"Quality isn't everything. It's the only thing." From the moment you contact us to job completion, we go above and beyond to make the process smooth and hassle-free.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <li>Brett Gilliand - Covington, KY</li>
-                <blockquote>“We had a pipe burst after the freeze. DTK Solutions was responsive. Was able to get us in a day earlier than another company. Communication was great. They did a great job”</blockquote>
+        <!-- Testimonials -->
+        <section class="hp-testimonials">
+            <div class="hp-testimonials-inner">
+                <h2 class="hp-section-heading">What Our Customers Say</h2>
+                <div class="hp-testimonial-grid">
+                    <div class="hp-testimonial-card">
+                        <blockquote>"When you are in need of a heating and cooling company, DTK Solutions is the area's best locally-owned and operated HVAC company that provides quality HVAC services to fit your needs."</blockquote>
+                        <cite>Shannon Doherty - Sharonville, OH</cite>
+                    </div>
+                    <div class="hp-testimonial-card">
+                        <blockquote>"Kudos, to our plumber, Stewart, who backed up his words with amazing service."</blockquote>
+                        <cite>Matthew Larson - Batavia, OH</cite>
+                    </div>
+                    <div class="hp-testimonial-card">
+                        <blockquote>"We had a pipe burst after the freeze. DTK Solutions was responsive. Was able to get us in a day earlier than another company. Communication was great. They did a great job"</blockquote>
+                        <cite>Brett Gilliand - Covington, KY</cite>
+                    </div>
+                    <div class="hp-testimonial-card">
+                        <blockquote>"DTK Solutions is the service company we will recommend anytime we are asked."</blockquote>
+                        <cite>Shane Workman - Hebron, KY</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <li>Shane Workman - Hebron, KY</li>
-                <blockquote>“DTK Solutions is the service company we will recommend anytime we are asked.”</blockquote>
-            </ul>
-        </aside>
-        <a href="mailto:rooterking40@gmail.com" class="btn-call-now">Book an Appointment today!</a>
+        <!-- Contact CTA -->
+        <section class="hp-cta">
+            <div class="hp-cta-inner">
+                <h2>Ready to Get Started?</h2>
+                <p>Get in touch with us today to learn more about our services and how we can help. We're just a phone call away.</p>
+                <div class="hp-cta-actions">
+                    <a href="tel:5136920112" class="hp-btn-primary">Call (513) 692-0112</a>
+                    <a href="mailto:rooterking40@gmail.com" class="hp-btn-secondary">Book an Appointment</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <div class="icons">
-            <p><a href="#" class="fa fa-facebook"></a></p>
-            <p><a href="#" class="fa fa-linkedin"></a></p>
-            <p><a href="mailto:rooterking40@gmail.com" class="fa fa-envelope"></a></p>
-            <p class="email">rooterking40@gmail.com</p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col footer-contact">
+                <p class="footer-col-heading">Contact Us</p>
+                <p class="footer-brand">DTK Solutions 1, LLC</p>
+                <p><a href="tel:5136920112">(513) 692-0112</a></p>
+                <p><a href="mailto:rooterking40@gmail.com">rooterking40@gmail.com</a></p>
+                <p>260 Northland Blvd<br>Cincinnati, OH 45246</p>
+            </div>
+            <div class="footer-col footer-links">
+                <p class="footer-col-heading">Quick Links</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plumbing.html">Plumbing</a></li>
+                    <li><a href="hvac.html">Heating &amp; Air</a></li>
+                    <li><a href="turns.html">Apartment Turns</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-map">
+                <p class="footer-col-heading">Our Location</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.2194748194847!2d-84.48254218818542!3d39.28327292372523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88404e7d548508f1%3A0x44d0b4330a9b6056!2s260%20Northland%20Blvd%2C%20Springdale%2C%20OH%2045246!5e0!3m2!1sen!2sus!4v1712592071431!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="info">
-            &copy; copyright 2024 DTK Solutions 1, LLC</p>
-            (513) 692-0112</p>
-            <p>260 Northland Blvd Cincinnati, OH 45246</p>
+        <div class="footer-bottom">
+            <p>&copy; copyright 2024 DTK Solutions 1, LLC</p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.2194748194847!2d-84.48254218818542!3d39.28327292372523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88404e7d548508f1%3A0x44d0b4330a9b6056!2s260%20Northland%20Blvd%2C%20Springdale%2C%20OH%2045246!5e0!3m2!1sen!2sus!4v1712592071431!5m2!1sen!2sus" width="250" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
     
 
@@ -97,9 +187,10 @@
         <div>
             <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="plumbing.html">Plumbing</a></li>
-                <li><a href="hvac.html">Heating and Air Conditioning</a></li>
-                <li><a href="turns.html">Apartment turns</a></li>
+                <li><a href="hvac.html">Heating &amp; Air</a></li>
+                <li><a href="turns.html">Apartment Turns</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
