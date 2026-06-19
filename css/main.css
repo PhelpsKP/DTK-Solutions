@@ -11,21 +11,21 @@ ul {
 }
 
 .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.85rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 2rem;
     min-height: 72px;
-    gap: 1rem;
 }
 
 .header-brand a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    gap: 2px;
+    gap: 3px;
 }
 
 .brand-name {
@@ -34,7 +34,7 @@ ul {
     font-size: 1.5rem;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     line-height: 1.2;
     margin: 0;
 }
@@ -42,9 +42,16 @@ ul {
 .brand-tagline {
     font-family: Roboto, sans-serif;
     font-size: 0.7rem;
-    color: #94a3b8;
+    color: #7a94b0;
     font-style: italic;
     font-weight: 400;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-shrink: 0;
 }
 
 .desktop-nav ul {
@@ -52,16 +59,17 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 0.125rem;
+    gap: 0.25rem;
 }
 
 .desktop-nav a {
     display: block;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 0.65rem;
     color: #cbd5e1;
     font-family: Roboto, sans-serif;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
+    letter-spacing: 0.01em;
     text-decoration: none;
     border-radius: 4px;
     transition: color 0.2s, background-color 0.2s;
@@ -72,6 +80,11 @@ ul {
 .desktop-nav a:focus {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.desktop-nav a[aria-current="page"] {
+    color: #ffffff;
+    background-color: rgba(29, 111, 164, 0.35);
 }
 
 .header-actions {
@@ -86,12 +99,13 @@ ul {
     background-color: #1d6fa4;
     color: #ffffff;
     font-family: Roboto, sans-serif;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.25rem;
     border-radius: 4px;
     text-decoration: none;
     white-space: nowrap;
+    letter-spacing: 0.01em;
     transition: background-color 0.2s;
 }
 
@@ -524,75 +538,90 @@ a:active {
     margin: 0;
 }
 
-/* Nav Menu */
+/* Nav Menu / Mobile Offcanvas */
 
 .offcanvas {
-    background-color: #333;
+    --bs-offcanvas-width: 280px;
+    background-color: #1a2744;
+}
+
+.offcanvas-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    align-items: center;
+}
+
+.offcanvas-title {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .offcanvas-body {
-    padding: 0;
-    background-color: #333;
-  }
-
-  .offcanvas-title {
-    color: navy;
-    padding: 20px;
-    font-size: 2em;
-    text-align: center;
-    font-family: roboto;
-    font-weight: 800;
-    background-color: white;
-    border: .15em solid navy;
-    border-radius: 1em;
-  }
-  
-  .offcanvas-body nav {
+    padding: 1.5rem;
+    background-color: #1a2744;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+}
+
+.offcanvas-nav {
     list-style: none;
     margin: 0;
-    padding: 20px;
-  }
-  
-  .offcanvas-body nav ul {
-    padding: 5vh;
-  }
-  
-  .offcanvas-body nav li {
-    margin-bottom: 5vh;
-    border-bottom: 2px solid rgb(194, 149, 86);
-    padding-bottom: 1em;
-    font-size: 2em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.offcanvas-nav a {
+    display: block;
+    padding: 0.7rem 0.75rem;
+    font-family: Roboto, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.offcanvas-nav a:hover,
+.offcanvas-nav a:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+.offcanvas-cta {
+    display: block;
+    background-color: #1d6fa4;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
     text-align: center;
-  }
-  
-  .offcanvas-body nav a {
-    color: #fff;
+    transition: background-color 0.2s;
+}
+
+.offcanvas-cta:hover,
+.offcanvas-cta:focus {
+    background-color: #155d8a;
+    color: #ffffff;
+}
+
+a {
     text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  .offcanvas-body nav a:hover {
-    color: #096093;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .btn-close {
-    font-size: 2em;
-    position: absolute;
-    bottom: 3em;
-    right: 5.8em;
-    background-color: white;
-  }
+}
   
   
 
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
     .desktop-nav {
         display: none;
     }
@@ -636,7 +665,7 @@ a:active {
 
 @media (max-width: 480px) {
     .header-inner {
-        padding: 0 0.75rem;
+        padding: 0.75rem 0.75rem;
     }
     .brand-name {
         font-size: 1rem;

@@ -23,20 +23,22 @@
                     <span class="brand-tagline">"Quality isn't everything. It's the only thing."</span>
                 </a>
             </div>
-            <nav class="desktop-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="plumbing.html">Plumbing</a></li>
-                    <li><a href="hvac.html">Heating &amp; Air</a></li>
-                    <li><a href="turns.html">Apartment Turns</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="tel:5136920112" class="header-cta">Call (513) 692-0112</a>
-                <button class="btn-mobile-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWindow" aria-label="Open navigation menu">
-                    &#9776;
-                </button>
+            <div class="header-right">
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="plumbing.html">Plumbing</a></li>
+                        <li><a href="hvac.html">Heating &amp; Air</a></li>
+                        <li><a href="turns.html" aria-current="page">Apartment Turns</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:5136920112" class="header-cta">Call (513) 692-0112</a>
+                    <button class="btn-mobile-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWindow" aria-label="Open navigation menu">
+                        &#9776;
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -125,16 +127,14 @@
 
 </div>
 
-<div class="offcanvas offcanvas-start border-right border-dark border-2" tabindex="-1" id="offcanvasWindow" aria-labelledby="offcanvasWindowLabel">
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWindow" aria-labelledby="offcanvasWindowLabel">
     <div class="offcanvas-header">
-        <h2 class="offcanvas-title" id="offcanvasWindowLabel">How can we help you today?</h2>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <span class="offcanvas-title" id="offcanvasWindowLabel">DTK Solutions</span>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-
-    <section class="offcanvas-body">
-        <div>
-            <nav>
-            <ul>
+    <div class="offcanvas-body">
+        <nav aria-label="Mobile navigation">
+            <ul class="offcanvas-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="plumbing.html">Plumbing</a></li>
                 <li><a href="hvac.html">Heating &amp; Air</a></li>
@@ -142,8 +142,8 @@
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
-        </div>
-    </section>
+        <a href="tel:5136920112" class="offcanvas-cta">Call (513) 692-0112</a>
+    </div>
 </div>
 
 </body>
